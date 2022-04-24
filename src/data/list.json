@@ -1,0 +1,21 @@
+[
+  {
+    "name": "bulbasaur",
+    "subtext": "Seed Pokémon",
+    "id": "001",
+    "types": ["Grass", "Poison"],
+    "abilities": [
+      {
+        "name": "Overgrow",
+        "isHidden": false
+      },
+      {
+        "name": "Chlorophyll",
+        "isHidden": true
+      }
+    ],
+    "alternates": [],
+    "hasShiny": true,
+    "availableBalls": ["POKEBALL"]
+  }
+]
