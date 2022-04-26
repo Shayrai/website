@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "shiny": false,
+    "ball": "POKEBALL",
+    "gender": "male",
+    "date": "",
+    "OT": "",
+    "ability": "",
+    "form": "",
+    "nickname": "",
+    "selfObtained": true,
+    "Gmax": {
+      "available": false,
+      "obtained": false
+    }
+  }
+]
