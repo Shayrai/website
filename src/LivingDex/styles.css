@@ -1,0 +1,13 @@
+.dexEntry {
+  margin: auto;
+  text-align: center;
+}
+
+.dexHeader {
+  margin: auto;
+  text-align: center;
+}
+
+.obtained {
+  --bs-table-accent-bg: #0f5132 !important;
+}

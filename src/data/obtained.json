@@ -1,18 +1,116 @@
 [
   {
-    "id": "1",
-    "shiny": false,
-    "ball": "POKEBALL",
-    "gender": "male",
-    "date": "",
-    "OT": "",
-    "ability": "",
-    "form": "",
-    "nickname": "",
-    "selfObtained": true,
-    "Gmax": {
-      "available": false,
-      "obtained": false
+    "id": 0,
+    "GMAX": {
+      "isCapable": false,
+      "hasUnlocked": false 
+    },
+    "form": null,
+    "gender": "Male",
+    "isShiny": false,
+    "other": {
+      "selfObtained": "",
+      "OT": "",
+      "ability": "",
+      "date": "",
+      "nickname": "",
+      "originalGame": "",
+      "ball": "POKEBALL"
+    }
+  },
+  {
+    "id": 1,
+    "GMAX": {
+      "isCapable": false,
+      "hasUnlocked": false 
+    },
+    "form": null,
+    "gender": "Male",
+    "isShiny": false,
+    "other": {
+      "selfObtained": "",
+      "OT": "",
+      "ability": "",
+      "date": "",
+      "nickname": "",
+      "originalGame": "",
+      "ball": "POKEBALL"
+    }
+  },
+  {
+    "id": 2,
+    "GMAX": {
+      "isCapable": false,
+      "hasUnlocked": false 
+    },
+    "form": null,
+    "gender": "Female",
+    "isShiny": true,
+    "other": {
+      "selfObtained": "",
+      "OT": "",
+      "ability": "",
+      "date": "",
+      "nickname": "",
+      "originalGame": "",
+      "ball": "POKEBALL"
+    }
+  },
+  {
+    "id": 3,
+    "GMAX": {
+      "isCapable": true,
+      "hasUnlocked": true 
+    },
+    "form": null,
+    "gender": "Female",
+    "isShiny": false,
+    "other": {
+      "selfObtained": "",
+      "OT": "",
+      "ability": "",
+      "date": "",
+      "nickname": "",
+      "originalGame": "",
+      "ball": "POKEBALL"
+    }
+  },
+  {
+    "id": 3,
+    "GMAX": {
+      "isCapable": true,
+      "hasUnlocked": false 
+    },
+    "form": null,
+    "gender": "Male",
+    "isShiny": false,
+    "other": {
+      "selfObtained": "",
+      "OT": "",
+      "ability": "",
+      "date": "",
+      "nickname": "",
+      "originalGame": "",
+      "ball": "POKEBALL"
+    }
+  },
+  {
+    "id": 12,
+    "GMAX": {
+      "isCapable": true,
+      "hasUnlocked": true 
+    },
+    "form": null,
+    "gender": "Female",
+    "isShiny": true,
+    "other": {
+      "selfObtained": "",
+      "OT": "",
+      "ability": "",
+      "date": "",
+      "nickname": "",
+      "originalGame": "",
+      "ball": "POKEBALL"
     }
   }
 ]

@@ -5,18 +5,21 @@ import Options from './Options';
 const LivingDex = () => {
   
   const [ showAlt, setShowAlt ] = useState(false);
+  const [ showGMax, setShowGMax ] = useState(false);
   const [ showShiny, setShowShiny ] = useState(false);
 
   const alternates = { showAlt, setShowAlt };
+  const GMaxSet = { showGMax, setShowGMax };
   const shinies = { showShiny, setShowShiny };
 
   return (
     <>
-      <Options alternates={alternates} shinies={shinies} />
+      <Options alternates={alternates} shinies={shinies} GMaxSet={GMaxSet}/>
       <br />
       <List
-        alternates={alternates}
-        shinies={shinies}
+        showAlt={showAlt}
+        showShiny={showShiny}
+        showGMax={showGMax}
       />
     </>
   )

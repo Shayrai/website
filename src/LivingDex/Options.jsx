@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Options = ({alternates, shinies}) => {
+const Options = ({alternates, shinies, GMaxSet}) => {
 
   const AltBox = () => {
     return (
@@ -12,10 +12,30 @@ const Options = ({alternates, shinies}) => {
           name="alternateForms"
           checked={alternates.showAlt}
           onChange={
-            () => alternates.setShowAlt(!alternates.showAlt)
+            () => {
+              alternates.setShowAlt(!alternates.showAlt)
+              GMaxSet.setShowGMax(false);
+            }
           }
         />
         <label htmlFor="alternateForms">Alternate Forms?</label>
+      </>
+    );
+  }
+
+  const GMaxBox = () => {
+    return (
+      <>
+        <input
+          type="checkbox"
+          id="alternateForms"
+          name="alternateForms"
+          checked={GMaxSet.showGMax}
+          onChange={
+            () => GMaxSet.setShowGMax(!GMaxSet.showGMax)
+          }
+        />
+        <label htmlFor="alternateForms">GMax Forms?</label>
       </>
     );
   }
@@ -40,6 +60,7 @@ const Options = ({alternates, shinies}) => {
   return (
     <>
       <AltBox />
+      {alternates.showAlt && <GMaxBox />}
       <ShinyBox />
     </>
   )

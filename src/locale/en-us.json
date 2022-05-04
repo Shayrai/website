@@ -1,0 +1,10 @@
+{
+  "male": "Male",
+  "female": "Female",
+  "galarian": "Galarian",
+  "alolan": "Alolan",
+  "gigantamax": "Gigantamax",
+  "shiny": "Shiny",
+  "pokemonDexEntry": "{gender} {pokemon} {form}",
+  "error": "An error has occured"
+}
