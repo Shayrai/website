@@ -1,0 +1,107 @@
+.dexEntry {
+  margin: auto;
+  text-align: center;
+}
+
+.dexHeader {
+  margin: auto;
+  text-align: center;
+}
+
+.entryCard {
+  text-align: center;
+}
+
+.entryCard > .list-group {
+  font-weight: 600;
+}
+
+.typesCard > .list-group > .normal {
+  background: #A8A878;
+    border: 1px solid #6D6D4E;
+}
+
+.typesCard > .list-group > .fire {
+  background: #F08030;
+  border: 1px solid #9C531F;
+}
+
+.typesCard > .list-group > .water {
+  background: #6890F0;
+  border: 1px solid #445E9C;
+}
+
+.typesCard > .list-group > .electric {
+  background: #F8D030;
+  border: 1px solid #A1871F;
+}
+
+.typesCard > .list-group > .grass {
+  background: #78C850;
+  border: 1px solid #4E8234;
+}
+
+.typesCard > .list-group > .ice {
+  background: #98D8D8;
+  border: 1px solid #638D8D;
+}
+
+.typesCard > .list-group > .fighting {
+  background: #C03028;
+  border: 1px solid #7D1F1A;
+}
+
+.typesCard > .list-group > .poison {
+  background: #A040A0;
+  border: 1px solid #682A68;
+}
+
+.typesCard > .list-group > .ground {
+  background: #E0C068;
+  border: 1px solid #927D44;
+}
+
+.typesCard > .list-group > .flying {
+  background: #A890F0;
+  border: 1px solid #6D5E9C;
+}
+
+.typesCard > .list-group > .psychic {
+  background: #F85888;
+  border: 1px solid #A13959;
+}
+
+.typesCard > .list-group > .bug {
+  background: #F85888;
+  border: 1px solid #A13959;
+}
+
+.typesCard > .list-group > .rock {
+  background: #A8B820;
+  border: 1px solid #6D7815;
+}
+
+.typesCard > .list-group > .ghost {
+  background: #705898;
+  border: 1px solid #493963;
+}
+
+.typesCard > .list-group > .dragon {
+  background: #7038F8;
+  border: 1px solid #4924A1;
+}
+
+.typesCard > .list-group > .dark {
+  background: #705848;
+  border: 1px solid #49392F;
+}
+
+.typesCard > .list-group > .steel {
+  background: #B8B8D0;
+  border: 1px solid #787887;
+}
+
+.typesCard > .list-group > .fairy {
+  background: #EE99AC;
+  border: 1px solid #9B6470;
+}

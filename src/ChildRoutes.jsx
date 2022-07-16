@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Home';
+import Homepage from './Homepage/Homepage';
 
 const ChildRoutes = () => {
   return (
     <Router>
       <Switch>
         <Route path="/" exact>
-          <Home />
+          <Homepage />
         </Route>
       </Switch>
     </Router>

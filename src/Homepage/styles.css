@@ -1,0 +1,38 @@
+.obtained {
+  --bs-table-accent-bg: #0f5132 !important;
+}
+
+.noMargin {
+  margin: 0px !important;
+}
+
+.pad-1-t {
+  padding-top: 1rem;
+}
+
+.pad-1-lr {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pad-1-l {
+  padding-left: 1rem;
+}
+
+.pad-1-r {
+  padding-right: 1rem;
+}
+
+.homeCard {
+  text-align: center;
+}
+
+.homeCard > .list-group {
+  font-weight: 600;
+}
+
+.progressBarLabel {
+  position: absolute !important;
+  text-align: center !important;
+  width: 100% !important;
+}

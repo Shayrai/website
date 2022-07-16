@@ -5,3 +5,14 @@
 }
 
 @import "~bootstrap/scss/bootstrap";
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.footer {
+  margin-top: 10px;
+  border-top: black;
+  border-top-style: solid;
+}

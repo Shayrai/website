@@ -1,0 +1,136 @@
+[
+  {
+    "id": 0,
+    "list": [
+      {
+        "dex": {
+          "gender": "",
+          "isShiny": false,
+          "form": [
+            "",
+            ""
+          ]
+        },
+        "special": {
+          "captured": {
+            "date": "",
+            "OT": [],
+            "originalGame": "",
+            "ball": ""
+          },
+          "selfObtained": false,
+          "ability": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "list": [
+      {
+        "dex": {
+          "gender": "Male",
+          "isShiny": false,
+          "form": []
+        },
+        "special": {
+          "captured": {
+            "date": "",
+            "OT": [],
+            "originalGame": "",
+            "ball": ""
+          },
+          "selfObtained": false,
+          "ability": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "list": [
+      {
+        "dex": {
+          "gender": "Female",
+          "isShiny": true,
+          "form": []
+        },
+        "special": {
+          "captured": {
+            "date": "",
+            "OT": [],
+            "originalGame": "",
+            "ball": ""
+          },
+          "selfObtained": false,
+          "ability": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "list": [
+      {
+        "dex": {
+          "gender": "Female",
+          "isShiny": false,
+          "form": [
+            "GMax"
+          ]
+        },
+        "special": {
+          "captured": {
+            "date": "",
+            "OT": [],
+            "originalGame": "",
+            "ball": ""
+          },
+          "selfObtained": false,
+          "ability": []
+        }
+      },
+      {
+        "dex": {
+          "gender": "Male",
+          "isShiny": false,
+          "form": []
+        },
+        "special": {
+          "captured": {
+            "date": "",
+            "OT": [],
+            "originalGame": "",
+            "ball": ""
+          },
+          "selfObtained": false,
+          "ability": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "list": [
+      {
+        "dex": {
+          "gender": "Female",
+          "isShiny": true,
+          "form": [
+            "GMax"
+          ]
+        },
+        "special": {
+          "captured": {
+            "date": "",
+            "OT": [],
+            "originalGame": "",
+            "ball": ""
+          },
+          "selfObtained": false,
+          "ability": []
+        }
+      }
+    ]
+  }
+]

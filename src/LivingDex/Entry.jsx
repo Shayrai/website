@@ -13,26 +13,28 @@ const Entry = ({
 
   return (
     <td className={`dexEntry ${obtained ? 'obtained' : 'unobtained'}`}>
-    # {String(pokemon.id).padStart(3, 0)}
-    <br />
-    {isShiny && <FormattedMessage id="shiny" />}
-    <FormattedMessage
-      id="pokemonDexEntry"
-      values={{
-        pokemon: pokemon.name.slice(0, 1).toUpperCase().concat(pokemon.name.slice(1)),
-        form: altName?.length > 0 ? altName[1] : '',
-        gender: gender && pokemon.has_gender_differences && (isShiny ? ` ${forms.general[gender][1]}` : forms.general[gender][1]),
-      }}
-    />
-    <br />
-    <input
-      type="checkbox"
-      id="obtainedPokemon"
-      name="obtainedPokemon"
-      disabled="disabled"
-      checked={obtained}
-    />
-  </td>
+      <a href={`/entry/${String(pokemon.id).padStart(3, 0)}`}>
+        # {String(pokemon.id).padStart(3, 0)}
+        <br />
+        {isShiny && <FormattedMessage id="shiny" />}
+        <FormattedMessage
+          id="pokemonDexEntry"
+          values={{
+            pokemon: pokemon.name.slice(0, 1).toUpperCase().concat(pokemon.name.slice(1)),
+            form: altName?.length > 0 ? altName[1] : '',
+            gender: gender && pokemon.has_gender_differences && (isShiny ? ` ${forms.general[gender][1]}` : forms.general[gender][1]),
+          }}
+        />
+      </a>
+      <br />
+      <input
+        type="checkbox"
+        id="obtainedPokemon"
+        name="obtainedPokemon"
+        disabled="disabled"
+        checked={obtained}
+      />
+    </td>
   );
 };
 

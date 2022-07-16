@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
 import { forms, lastInDexByRegion, regions, fontAwesomeValues } from '../constants';
 import useLoadPokemonList from '../hooks/useLoadPokemonList';
-import obtained from '../data/obtained.json';
+import obtained from '../data/obtainedNew.json';
 import Entry from './Entry';
+import Footer from '../Footer';
 import styles from './styles.css';
 
 const List = ({
@@ -69,24 +70,20 @@ const List = ({
   };
 
   const hasObtained = (pokemon, gender, altName, isShiny) => (
-    obtained.some((entry) => {
-      const matchedId = pokemon.id === entry.id;
+    obtained.find((result) => result.id === pokemon.id)?.list.some((entry) => {
+      const { dex } = entry;
 
-      const canGMax = entry.GMAX.isCapable;
-      let matchedShiny = true;
-      let matchedGender = true;
-      let matchedAlt = true;
+      const matchedShiny = showShiny ? dex.isShiny === isShiny : true;
+      const matchedGender = gender ? dex.gender.toUpperCase() === gender.toUpperCase() : true;
+      const lookingForGMax = showGMax && altName?.length > 0 && altName[1]?.includes('Gigantamax');
+      const matchedAlt = altName?.length > 0 && !lookingForGMax ? ( dex.form.length > 0 ? dex.form[0] === altName[1] : false) : true;
       let matchedGMax = false;
+      if (!lookingForGMax) matchedGMax = true;
+      if (lookingForGMax && dex.form.length > 0 && dex.form.some((form) => form.includes('GMax'))) matchedGMax = true;
 
-      if (matchedId) {
-        matchedShiny = showShiny ? entry.isShiny === isShiny : true;
-        matchedGender = gender ? entry.gender.toUpperCase() === gender.toUpperCase() : true;
-        const lookingForGmax = showGMax && altName && altName.length > 0 && altName[1]?.includes('Gigantamax');
-        if (!lookingForGmax && (showGMax ? !entry.GMAX.hasUnlocked : true )) matchedGMax = true;
-        if (lookingForGmax && entry.GMAX.hasUnlocked) matchedGMax = true;
-      };
 
-      return matchedId && matchedShiny && matchedGender && matchedAlt && (canGMax ? matchedGMax : true);
+      return matchedShiny && matchedGender && matchedAlt && matchedGMax;
+
     })
   );
 
@@ -113,6 +110,8 @@ const List = ({
 
     const sections = [];
     let rows = [];
+
+    console.log(responseData[0]);
 
     const { pokemon_v2_pokemonspecies: species } = responseData[0];
 
@@ -224,7 +223,12 @@ const List = ({
     ));
   }
 
-  return <Tables />;
+  return (
+    <>
+      <Tables />
+      <Footer />
+    </>
+  );
 
 };
 
