@@ -6,7 +6,7 @@ import styles from './styles.css'
 
 import data from '../data/homepageData.json';
 
-const OriginMarksCard = () => {
+const AltFormsCard = ({ isShiny }) => {
   const [ subcard, setSubcard ] = useState('');
 
   const loadSubCard = (identifier) => {
@@ -17,7 +17,7 @@ const OriginMarksCard = () => {
     };
   };
 
-  const Originmark = ({ mark, obtained, max }) => {
+  const AltForm = ({ mark, obtained, max }) => {
     return (
       <>
         {mark}
@@ -26,10 +26,10 @@ const OriginMarksCard = () => {
     )
   }
 
-  const getByMarks = (entry, hasSublist) => entry.entries.map((mark) => (
+  const getByForms = (entry, hasSublist) => entry.entries.map((mark) => (
     <>
       <ListGroup.Item key={mark.name}  onClick={() => loadSubCard(mark.name)}>
-        <Originmark
+        <AltForm
           mark={mark.name}
           obtained={mark.obtained}
           max={mark.max}
@@ -47,10 +47,10 @@ const OriginMarksCard = () => {
   ));
 
   const RenderCard = ({ list, header, identifier, hasSublist = true }) => (
-    <Card className="homeCard marksCard">
+    <Card className="homeCard altFormsCard">
       {hasSublist && <Card.Header>{header}</Card.Header>}
       <ListGroup variant="flush">
-        {getByMarks(
+        {getByForms(
           list.filter(
             (entry) => entry.card === identifier
           )[0] ?? {card: identifier, entries: []}, hasSublist)
@@ -62,10 +62,10 @@ const OriginMarksCard = () => {
   return (
     <RenderCard
       list={data}
-      header="Origin Marks"
-      identifier="OriginMarks"
+      header={`${isShiny ? 'Shiny ' : ''}Alternate Forms`}
+      identifier={`${isShiny ? 'Shiny' : ''}AltForms`}
     />
   )
 };
 
-export default OriginMarksCard;
+export default AltFormsCard;
